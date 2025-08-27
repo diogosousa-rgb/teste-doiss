@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio Empresarial</title>
   <style>
-    /* MELHORIA 1: ROLAGEM SUAVE */
     html {
       scroll-behavior: smooth;
     }
@@ -18,7 +17,7 @@
     header {
       background-image: url('img/doiss-header.png');
       background-repeat: no-repeat;
-      background-size: contain; /* Ajustado para 'cover' */
+      background-size: contain;
       background-position: center;
       min-height: 150px;
       color: white;
@@ -62,9 +61,6 @@
       max-width: 1100px;
       margin: auto;
     }
-    sobre{
-    text-align: justify;
-    }
     .block {
       display: flex;
       justify-content: center;
@@ -81,65 +77,37 @@
     .services, .portfolio, .team, .testimonials {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px; /* Corrigido: adicionado 'px' */
+      gap: 20px;
     }
-
-    /* ======================================================= */
-    /* INÍCIO DAS NOVAS ALTERAÇÕES                           */
-    /* ======================================================= */
-
-    /* Regra PADRÃO para todos os cards (Pilares, Portfólio, Equipe, etc.) */
     .card {
       background: #f9f9f9;
       padding: 20px;
       border-radius: 8px;
       text-align: center;
     }
-    
     .block .card {
         flex: 1;
         min-width: 280px;
     }
-    
-    /* Regra de EXCEÇÃO para os cards da seção de SERVIÇOS */
     #servicos .card {
       background: none;
       padding: 0;
       text-align: left;
-      /* === NOVO: Alinhamento vertical com Flexbox === */
       display: flex;
       flex-direction: column;
-      justify-content: flex-start; /* Alinha o h3 e a lista no topo do card */
+      justify-content: flex-start;
     }
-
-    /* Reset da lista de serviços */
     .servicos-lista {
       list-style-type: none;
       padding-left: 0;
       margin-top: 20px;
     }
-
-    /* Estilo do "mini-bloco" para cada item da lista */
     .servicos-lista li {
       background-color: #f9f9f9;
       padding: 15px;
       border-radius: 8px;
       margin-bottom: 10px;
       font-size: 15px;
-      
-      /* === NOVO: Controle de tamanho (descomente para usar) === */
-      /* max-width: 450px; */
-      /* min-height: 60px; */
-    }
-
-    /* ======================================================= */
-    /* FIM DAS NOVAS ALTERAÇÕES                              */
-    /* ======================================================= */
-
-    .card img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 15px;
     }
     .cta {
       background: #0052cc;
@@ -178,17 +146,15 @@
   <a href="#sobre">Sobre</a>
   <a href="#pilares">Pilares</a>
   <a href="#servicos">Serviços</a>
-  <a href="#portfolio">Portfólio</a>
+  <a href="#Clientes">Clientes</a>
   <a href="#onde-estamos">Onde Estamos</a>
   <a href="#equipe">Equipe</a>
   <a href="#contato">Contato</a>
 </nav>
 
 <section id="sobre">
-  <div class="sobre">
    <h2>Sobre Nós</h2>
-      <p>A DOISS possui amplo conhecimento técnico na inspeção, análise e certificação de granéis, seguindo os mais rigorosos padrões de qualidade, com equipe formada por técnicos e engenheiros capacitados para o <strong>pronto atendimento</strong>. Sempre valorizando a honestidade, qualidade e cuidado com o capital humano, oferecendo soluções para que a empresa parceira tenha certeza da <strong>qualidade de seu produto</strong>.</p>
-  <div>
+   <p>A DOISS possui amplo conhecimento técnico na inspeção, análise e certificação de granéis, seguindo os mais rigorosos padrões de qualidade, com equipe formada por técnicos e engenheiros capacitados para o <strong>pronto atendimento</strong>. Sempre valorizando a honestidade, qualidade e cuidado com o capital humano, oferecendo soluções para que a empresa parceira tenha certeza da <strong>qualidade de seu produto</strong>.</p>
 </section>
 
 <section id="pilares">
@@ -196,13 +162,11 @@
     <h2>Nossos Pilares</h2>
     <div class="card">
       <h3>Missão</h3>
-      <p>Promover certificação atendendo as normas nacionais e internacionais, garantindo a segurança e a qualidade exigida pelo mercado globalizado.
-</p>
+      <p>Promover certificação atendendo as normas nacionais e internacionais, garantindo a segurança e a qualidade exigida pelo mercado globalizado.</p>
     </div>
     <div class="card">
       <h3>Visão</h3>
-      <p>Tornar-se uma certificadora de referência internacional, sendo reconhecida pela excelência em nossos processos, assegurando o desenvolvimento de soluções que atendam às necessidades de nossos clientes.
-</p>
+      <p>Tornar-se uma certificadora de referência internacional, sendo reconhecida pela excelência em nossos processos, assegurando o desenvolvimento de soluções que atendam às necessidades de nossos clientes.</p>
     </div>
     <div class="card">
       <h3>Valores</h3>
@@ -247,21 +211,8 @@
 </section>
 
 <section id="portfolio">
-  <h2>Portfólio</h2>
-  <div class="portfolio">
-    <div class="card">
-      <img src="projeto1.jpg" alt="Projeto 1">
-      <p>Projeto de sistema de gestão para indústria.</p>
-    </div>
-    <div class="card">
-      <img src="projeto2.jpg" alt="Projeto 2">
-      <p>Campanha de marketing para lançamento de produto.</p>
-    </div>
-    <div class="card">
-      <img src="projeto3.jpg" alt="Projeto 3">
-      <p>Website institucional para empresa de tecnologia.</p>
-    </div>
-  </div>
+  <h2>Clientes</h2>
+  <p>Em breve adicionaremos imagens dos nossos projetos e clientes.</p>
 </section>
   
 <section id="onde-estamos">
@@ -280,23 +231,7 @@
 
 <section id="equipe">
   <h2>Nosso Time</h2>
-  <div class="team">
-    <div class="card">
-      <img src="equipe1.jpg" alt="Membro 1">
-      <h3>João Silva</h3>
-      <p>CEO & Fundador</p>
-    </div>
-    <div class="card">
-      <img src="equipe2.jpg" alt="Membro 2">
-      <h3>Maria Souza</h3>
-      <p>Diretora de Marketing</p>
-    </div>
-    <div class="card">
-      <img src="equipe3.jpg" alt="Membro 3">
-      <h3>Pedro Santos</h3>
-      <p>CTO</p>
-    </div>
-  </div>
+  <p>As fotos da equipe serão adicionadas em breve.</p>
 </section>
 
 <section id="contato" class="cta">
